@@ -1,0 +1,21 @@
+#logo {
+    width: 10%;
+    height: 10%;
+}
+#about-logo {
+    width: 25%;
+    height: 35%;
+}
+
+#test {
+    height: 500px;
+}
+
+.fab, .fas {
+    color: black;
+}
+
+.work-page-img {
+    width: 900px;
+    height: 500px;
+}
