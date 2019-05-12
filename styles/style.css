@@ -39,3 +39,7 @@
 .color-blue-dark {
     color: #005f81;
 }
+
+body {
+    background-color: grey;
+}
