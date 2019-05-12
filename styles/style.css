@@ -19,3 +19,27 @@
     width: 900px;
     height: 500px;
 }
+
+.color-red {
+    color: #a10532;
+}
+
+.color-pink {
+    color: #ff6fa9;
+}
+
+.color-tan {
+    color: #ffd0cc;
+}
+
+.color-blue-light {
+    color: #00b7cc;
+}
+
+.color-blue-dark {
+    color: #005f81;
+}
+
+body {
+    background-color: grey;
+}
