@@ -5,7 +5,7 @@ $(".read-more").on("click", function (event) {
 
     const div = $("<div>");
     $(div).attr("id", "modal-container");
-    $(div).addClass("readme");
+    $(div).addClass("readme mt-4");
     const divModal = $("<div>");
     $(divModal).attr("id", "modal");
     const divClose = $("<div>");
@@ -16,23 +16,33 @@ $(".read-more").on("click", function (event) {
     const closeBtn = $("<span>").html("&times;");
     $(closeBtn).addClass("close-button");
     const content = $("<p>").html(contentText);
-    divContent.append(closeBtn);
+    divClose.append(closeBtn);
     divContent.append(content);
     divModal.append(divContent);
 
-
-
-
-
     div.append(divModal);
 
-    $(this).parent().parent().parent().parent().parent().prepend(div);
+    $(this).parent().parent().parent().parent().parent().parent().prepend(div);
+    // $(this).prepend(div);
+
+
+    // if ($("#modal-container").length) {
+    //     console.log("there is a modal");
+    //     $(window).click(function (event) {
+    //         console.log(event.target);
+    //         console.log(document.getElementById("modal-container"));
+    //         if (event.target == document.getElementById("modal-container")) {
+    //             document.getElementById("modal-container").style.display = "none";
+    //         }
+    //     });
+    // }
 
 });
 
 function getContext(id) {
 
-    const blobberReadme = "Blobber Royal Game";
+    const blobberReadme = "Blobber Royal Game" + 
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam unde autem ad fugiat ut esse,perferendis illo, dolorum recusandae nostrum natus voluptas nisi eveniet facere sapiente id quodsit!";
     const fftReadme = "Food for Thought App";
     const mysticSpellsReadme = "Hangman Game";
     const nodeSiriReadme = "Siri like node App";
@@ -52,6 +62,33 @@ function getContext(id) {
 
     }
 }
+
+$(document).on("click", ".close-button", function () {
+    console.log("testing");
+    $("#modal-container").remove();
+})
+
+// $(".close-button").on("click", function () {
+//     console.log("testing");
+//     $("#modal-container").remove();
+// })
+
+
+
+// $("#testing-btn").on("click", function(event) {
+//     console.log("herfgbhqa");
+//     $("#id01").css("display", "block")
+// })
+
+//  // Get the modal
+//  var modal = document.getElementById('id01');
+          
+//  // When the user clicks anywhere outside of the modal, close it
+//  window.onclick = function(event) {
+//    if (event.target == modal) {
+//      modal.style.display = "none";
+//    }
+//  }
 
 
 
