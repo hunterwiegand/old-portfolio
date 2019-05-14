@@ -11,6 +11,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Custom CSS-->
     <link rel="stylesheet" href="../styles/style.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
@@ -39,7 +42,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 col-lg-6 py-5">
-                <div class="card border theme-border-color-custom">
+                <div class="card border color-blue-light">
                     <div class="card-header">
                         <div class="theme-background-color-custom text-white text-center py-2">
                             <h3>
@@ -55,8 +58,8 @@
                                         <i class="fa fa-user theme-background-color-custom"></i>
                                     </div>
                                 </div>
-                                <input type="text" class="form-control" id="name" name="name"
-                                    placeholder="Enter your name" required="">
+                                <input disabled="disabled" type="text" class="form-control" id="name" name="name"
+                                    placeholder="Hunter Wiegand" required="">
                             </div>
                         </div>
 
@@ -67,8 +70,8 @@
                                         <i class="fa fa-envelope theme-background-color-custom"></i>
                                     </div>
                                 </div>
-                                <input type="email" class="form-control" id="name" name="email"
-                                    placeholder="Enter your email" required="">
+                                <input disabled="disabled" type="email" class="form-control" id="name" name="email"
+                                    placeholder="hunter_wiegand@yahoo.com" required="">
                             </div>
                         </div>
 
@@ -79,14 +82,9 @@
                                         <i class="fa fa-comment theme-background-color-custom"></i>
                                     </div>
                                 </div>
-                                <textarea class="form-control" placeholder="'I think your website is great!' -Everyone"
+                                <textarea disabled="disabled" class="form-control" placeholder="Thank you for reaching out to me!"
                                     required=""></textarea>
                             </div>
-                        </div>
-
-                        <div class="text-center">
-                            <input type="button" value="Sumbit"
-                                class="btn theme-background-color-custom btn-block rounded-0 py-2 text-white">
                         </div>
                     </div>
                 </div>
@@ -120,4 +118,3 @@
 </body>
 
 </html>
-
