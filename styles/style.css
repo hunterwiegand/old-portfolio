@@ -7,6 +7,16 @@
     height: 80%;
 }
 
+/* #frontend-img {
+    height: 100%;
+    width: 100%;
+} */
+
+/* #backend-img {
+    height: 100%;
+    width: 100%;
+} */
+
 #test {
     height: 500px;
 }
@@ -59,7 +69,22 @@ body {
 .close-button:hover {
    cursor: pointer; 
 }
+@media (max-width: 576px) {
+    #frontend-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-bottom: 2em;
+    }
 
+    #backend-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
 @media (min-width: 576px) {
     .container {
        max-width: 100%; 
