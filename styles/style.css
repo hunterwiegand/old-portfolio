@@ -3,8 +3,8 @@
     height: 10%;
 }
 #about-logo {
-    width: 25%;
-    height: 35%;
+    width: 50%;
+    height: 50%;
 }
 
 #test {
@@ -16,30 +16,43 @@
 }
 
 .work-page-img {
-    width: 900px;
-    height: 500px;
+    width: 80%;
+    height: 80%;
 }
 
 .color-red {
-    color: #a10532;
+    background-color: #a10532;
 }
 
 .color-pink {
-    color: #ff6fa9;
+    background-color: #ff6fa9;
 }
 
 .color-tan {
-    color: #ffd0cc;
+    background-color: #ffd0cc;
 }
 
 .color-blue-light {
-    color: #00b7cc;
+    background-color: #00b7cc;
 }
 
 .color-blue-dark {
-    color: #005f81;
+    background-color: #005f81;
 }
 
 body {
-    background-color: grey;
+    background-color:#00b7cc;
+}
+
+.readme {
+    color: #005f81;
+    /* height: 100vw;
+    width: 100vw; */
+    /*   */
+    background-color: #ff6fa9;
+    /* display: none; */
+}
+
+.close-button {
+    
 }
