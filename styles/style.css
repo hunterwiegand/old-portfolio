@@ -3,8 +3,8 @@
     height: 10%;
 }
 #about-logo {
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 80%;
 }
 
 #test {
@@ -17,7 +17,7 @@
 
 .work-page-img {
     width: 80%;
-    height: 80%;
+    height: 93%;
 }
 
 .color-red {
@@ -41,7 +41,7 @@
 }
 
 body {
-    background-color:#00b7cc;
+    background-color:#ffd0cc;
 }
 
 .readme {
@@ -56,3 +56,16 @@ body {
 .close-button {
     
 }
+
+@media (min-width: 576px) {
+    .container {
+       max-width: 100%; 
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+       max-width: 100%; 
+    }
+}
+
